@@ -15,11 +15,11 @@ export const DEFAULT_LANGUAGE = "uz";
 export const translations = {
 	uz: {
 		envelope: {
-			invited: "SIZ TAKLIF QILINDINGIZ",
-			toWedding: "toʻyga",
+			invited: "SIZ TO'YIMIZGA",
+			toWedding: "taklif qilindingiz",
 			seal: "BOSING",
 			intro:
-				"Siz bu taklifnomani bejizga olmadingiz! Biz uchun shu alohida kunda yoningizda boʻlishingizni juda istaymiz!",
+				"Siz bu taklifnomani bejizga olmadingiz! Biz uchun shu alohida kunda yonimizda boʻlishingizni juda istaymiz!",
 		},
 		names: {
 			groom: "Oybek",
@@ -33,14 +33,14 @@ export const translations = {
 				date: "25 Iyun 2026",
 				time: "19:00 da",
 				venue: "Asr toʻyxonasi",
-				address: "Al-Xorazmiy koʻchasi 5, Urganch",
+				address: "Urganch, Gurlan koʻchasi, 111",
 			},
 			wedding: {
 				label: "Toʻy kuni",
-				date: "12 Sentyabr 2026",
-				time: "17:00 da",
-				venue: "Navruz toʻyxonasi",
-				address: "Amir Temur shoh koʻchasi 21, Toshkent",
+				date: "26 Iyun 2026",
+				time: "12:00 da",
+				venue: "Shohjaxon toʻyxonasi",
+				address: "Urganch, Alpomish ko'chasi, 4",
 			},
 		},
 		guests: {
@@ -52,7 +52,7 @@ export const translations = {
 		},
 		calendar: {
 			note: "Sizni shu kuni koʻrishdan baxtiyor boʻlamiz",
-			monthLabel: "Bizning sentyabr",
+			monthLabel: "Bizning Iyun",
 			weekdays: ["Du", "Se", "Cho", "Pa", "Ju", "Sha", "Ya"],
 			months: [
 				"Yanvar",
@@ -77,19 +77,6 @@ export const translations = {
 		},
 		quote: {
 			text: "Hayot – goʻzal sayohat. Sevgidan boʻlmagan narsaga bebaho vaqtni sarflash – ahmoqlik.",
-		},
-		wishes: {
-			title: "Tilaklar",
-			items: [
-				"Agar orzularimizni roʻyobga chiqarishga yordam bersangiz – tilaklaringizni konvertda taqdim etsangiz – minnatdor boʻlamiz.",
-				"Bayramimiz 18+ formatida, shuning uchun farzandlaringiz kim bilan qolishini oldindan rejalashtirib qoʻyishingizni soʻraymiz.",
-				"Bayramimiz uchun telegram-chat yaratdik. U yerda qoʻshimcha maʼlumot olishingiz hamda surat va videolarni ulashishingiz mumkin.",
-			],
-			joinLabel: "Qoʻshilish",
-		},
-		organizer: {
-			text: "Toʻy kuni juda hayajonlanamiz, shuning uchun barcha savollarni toʻy tashkilotchimiz Olgaga ishonib topshirdik.",
-			role: "Toʻy tashkilotchisi",
 		},
 		countdown: {
 			title: "Biz «Ha» deymiz...",
@@ -125,14 +112,14 @@ export const translations = {
 				date: "25 июня 2026",
 				time: "в 19:00",
 				venue: "Ресторан «Аср»",
-				address: "улица Аль-Хорезми 5, Ургенч",
+				address: "улица Гурленг 111, Ургенч",
 			},
 			wedding: {
 				label: "День свадьбы",
-				date: "12 сентября 2026",
-				time: "в 17:00",
-				venue: "Ресторан «Навруз»",
-				address: "проспект Амира Темура 21, Ташкент",
+				date: "26 июня 2026",
+				time: "в 12:00",
+				venue: "Ресторан «Щахжахан»",
+				address: "улица Алпомиш 4, Ургенч",
 			},
 		},
 		guests: {
@@ -144,7 +131,7 @@ export const translations = {
 		},
 		calendar: {
 			note: "Будем счастливы видеть вас в этот день",
-			monthLabel: "Наш сентябрь",
+			monthLabel: "Наш Июнь",
 			weekdays: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
 			months: [
 				"Январь",
@@ -169,19 +156,6 @@ export const translations = {
 		},
 		quote: {
 			text: "Жизнь – прекрасное путешествие. Глупо тратить бесценное время на то, что не про любовь.",
-		},
-		wishes: {
-			title: "Пожелания",
-			items: [
-				"Мы будем признательны, если Вы поможете осуществить наши мечты, подарив Ваши пожелания в конверте.",
-				"Наш праздник имеет формат 18+, поэтому просим заранее предусмотреть, с кем останутся ваши детки, пока вы будете отдыхать на празднике.",
-				"Мы создали телеграм-чат нашего праздника, где можно узнать дополнительную информацию, а также поделиться фотографиями и видео в день свадьбы и после.",
-			],
-			joinLabel: "Вступить",
-		},
-		organizer: {
-			text: "Мы будем очень волноваться на свадьбе, поэтому все вопросы доверили в руки нашего свадебного организатора Ольги.",
-			role: "Свадебный организатор",
 		},
 		countdown: {
 			title: "Мы скажем «Да» через...",
@@ -217,14 +191,14 @@ export const translations = {
 				date: "June 25, 2026",
 				time: "at 7:00 PM",
 				venue: "Asr Banquet Hall",
-				address: "5 Al-Khorezmi Street, Urgench",
+				address: "111 Gurlen Street, Urgench",
 			},
 			wedding: {
 				label: "Wedding Day",
-				date: "September 12, 2026",
-				time: "at 5:00 PM",
-				venue: "Navruz Banquet Hall",
-				address: "21 Amir Temur Avenue, Tashkent",
+				date: "June 26, 2026",
+				time: "at 12:00 PM",
+				venue: "Shojhahon Banquet Hall",
+				address: "4 Alpomish Street, Urgench",
 			},
 		},
 		guests: {
@@ -236,7 +210,7 @@ export const translations = {
 		},
 		calendar: {
 			note: "We would be delighted to see you on this day",
-			monthLabel: "Our September",
+			monthLabel: "Our June",
 			weekdays: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
 			months: [
 				"January",
@@ -262,19 +236,6 @@ export const translations = {
 		quote: {
 			text: "Life is a beautiful journey. It is foolish to waste precious time on anything that isn't about love.",
 		},
-		wishes: {
-			title: "Wishes",
-			items: [
-				"We would be grateful if you helped make our dreams come true by giving your wishes in an envelope.",
-				"Our celebration is an 18+ event, so please arrange in advance who will look after your little ones while you enjoy the party.",
-				"We've created a Telegram chat for our celebration where you can find extra details and share photos and videos on the wedding day and after.",
-			],
-			joinLabel: "Join",
-		},
-		organizer: {
-			text: "We'll be quite nervous on the wedding day, so we've entrusted all questions to our wedding planner, Olga.",
-			role: "Wedding planner",
-		},
 		countdown: {
 			title: 'We will say "Yes" in...',
 			days: "days",
@@ -297,29 +258,22 @@ export const EVENTS = {
 		// Girls' party — Urgench.
 		date: new Date("2026-06-25T19:00:00"),
 		mapEmbed:
-			"https://www.google.com/maps?q=Al-Khorezmi%20Street%205%2C%20Urgench&output=embed",
+			"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d451.4439161046809!2d60.6083369313182!3d41.574272596484086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1781783978990!5m2!1sen!2s",
 		mapLink:
-			"https://www.google.com/maps/search/?api=1&query=Al-Khorezmi+Street+5+Urgench",
+			"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d451.4439161046809!2d60.6083369313182!3d41.574272596484086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1781783978990!5m2!1sen!2s",
 	},
 	wedding: {
 		key: "wedding",
 		// Wedding day — Tashkent. Drives the calendar highlight and countdown.
-		date: new Date("2026-09-12T17:00:00"),
+		date: new Date("2026-06-26T12:00:00"),
 		year: 2026,
-		monthIndex: 8, // September (0-based)
-		day: 12,
+		monthIndex: 5, // September (0-based)
+		day: 26,
 		mapEmbed:
-			"https://www.google.com/maps?q=Amir%20Temur%20Avenue%2021%2C%20Tashkent&output=embed",
+			"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d595.9934732748924!2d60.59920376590808!3d41.54067808643485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1781783794992!5m2!1sen!2s",
 		mapLink:
-			"https://www.google.com/maps/search/?api=1&query=Amir+Temur+Avenue+21+Tashkent",
+			"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d595.9934732748924!2d60.59920376590808!3d41.54067808643485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1781783794992!5m2!1sen!2s",
 	},
 };
 
 export const EVENT_ORDER = ["party", "wedding"];
-
-// External links (placeholders — replace with the real chat / contacts).
-export const CONTACTS = {
-	telegramChat: "https://t.me/",
-	telegram: "https://t.me/",
-	whatsapp: "https://wa.me/",
-};

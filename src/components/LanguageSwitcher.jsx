@@ -6,7 +6,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="fixed right-3 top-3 z-50 sm:right-5 sm:top-5">
-      <div className="flex items-center gap-0.5 rounded-full border border-gold/30 bg-ivory/80 p-1 shadow-md backdrop-blur-md">
+      <div className="flex items-center gap-0.5 rounded-full border border-goldlight/40 bg-forest/90 p-1 shadow-md backdrop-blur-md">
         {languages.map((l) => {
           const active = l.code === lang
           return (
@@ -19,7 +19,7 @@ export default function LanguageSwitcher() {
               className={`rounded-full px-3 py-1.5 text-xs font-medium tracking-wide transition-colors duration-300 ${
                 active
                   ? 'bg-rose text-ivory shadow-sm'
-                  : 'text-ink/60 hover:text-rose'
+                  : 'text-ivory/70 hover:text-goldlight'
               }`}
             >
               {l.short}

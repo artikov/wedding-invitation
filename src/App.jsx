@@ -1,57 +1,64 @@
-import { useState } from 'react'
-import { AnimatePresence } from 'framer-motion'
-import { LanguageProvider, useLanguage } from './i18n/LanguageContext'
-import LanguageSwitcher from './components/LanguageSwitcher'
-import Envelope from './components/Envelope'
-import Hero from './components/Hero'
-import CalendarSection from './components/CalendarSection'
-import Location from './components/Location'
-import { Sprig } from './components/Ornaments'
+import { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { LanguageProvider, useLanguage } from "./i18n/LanguageContext";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+import Envelope from "./components/Envelope";
+import Names from "./components/Names";
+import Guests from "./components/Guests";
+import Venues from "./components/Venues";
+import Quote from "./components/Quote";
 
 function Footer() {
-  const { t } = useLanguage()
-  return (
-    <footer className="bg-blush/40 px-6 py-10 text-center">
-      <Sprig className="mx-auto mb-4 w-24 text-sage/70" />
-      <p className="font-script text-2xl text-rose">
-        {t.hero.groom} &amp; {t.hero.bride}
-      </p>
-      <p className="mt-2 text-xs uppercase tracking-widest-2 text-ink/40">
-        {t.footer.madeWith}
-      </p>
-    </footer>
-  )
+	const { t } = useLanguage();
+	return (
+		<footer className="bg-forest px-6 py-12 text-center text-ivory">
+			<p className="font-script text-3xl text-goldlight">
+				{t.names.groom} &amp; {t.names.bride}
+			</p>
+			<p className="mt-3 text-[0.7rem] uppercase tracking-[0.3em] text-ivory/50">
+				{t.footer.madeWith}
+			</p>
+		</footer>
+	);
 }
 
 function Invitation() {
-  return (
-    <main>
-      <Hero />
-      <CalendarSection />
-      <Location />
-      <Footer />
-    </main>
-  )
+	const reduce = useReducedMotion();
+	return (
+		<motion.main
+			initial={reduce ? { opacity: 0 } : { opacity: 0, y: 24 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.9, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+		>
+			<Names />
+			<Guests />
+			<Venues />
+			<Quote />
+			<Footer />
+		</motion.main>
+	);
 }
 
 function Experience() {
-  const [opened, setOpened] = useState(false)
+	const [opened, setOpened] = useState(false);
 
-  return (
-    <>
-      <LanguageSwitcher />
-      <AnimatePresence>
-        {!opened && <Envelope key="envelope" onOpen={() => setOpened(true)} />}
-      </AnimatePresence>
-      {opened && <Invitation />}
-    </>
-  )
+	return (
+		<>
+			<LanguageSwitcher />
+			{/* Invitation mounts beneath the envelope so it can rise in as the
+          envelope dissolves, giving a seamless page-to-page handoff. */}
+			{opened && <Invitation />}
+			<AnimatePresence>
+				{!opened && <Envelope key="envelope" onOpen={() => setOpened(true)} />}
+			</AnimatePresence>
+		</>
+	);
 }
 
 export default function App() {
-  return (
-    <LanguageProvider>
-      <Experience />
-    </LanguageProvider>
-  )
+	return (
+		<LanguageProvider>
+			<Experience />
+		</LanguageProvider>
+	);
 }

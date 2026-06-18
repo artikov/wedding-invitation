@@ -4,6 +4,7 @@ import Reveal from "./Reveal";
 import { Heart, Flourish } from "./Illustrations";
 
 const WEDDING = EVENTS.wedding;
+const PARTY = EVENTS.party;
 
 // Day grid for the wedding month, Monday-first.
 function buildMonth(year, monthIndex) {
@@ -58,6 +59,8 @@ export default function Guests() {
 							))}
 							{cells.map((day, i) => {
 								const highlight = day === WEDDING.day;
+								const preWedding = day === PARTY.day;
+
 								return (
 									<div
 										key={i}
@@ -66,11 +69,16 @@ export default function Guests() {
 										{day && (
 											<span className="relative flex h-9 w-9 items-center justify-center text-sm text-forest/80">
 												{highlight && (
+													<Heart className="absolute inset-0 h-9 w-9 animate-heartbeat text-blush" />
+												)}
+												{preWedding && (
 													<Heart className="absolute inset-0 h-9 w-9 animate-heartbeat text-rose" />
 												)}
 												<span
 													className={
-														highlight ? "relative font-medium text-ivory" : ""
+														highlight || preWedding
+															? "relative font-medium text-ivory"
+															: ""
 													}
 												>
 													{day}

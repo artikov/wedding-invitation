@@ -36,7 +36,7 @@ export const translations = {
 				address: "Urganch, Gurlan koʻchasi, 111",
 			},
 			wedding: {
-				label: "Toʻy kuni",
+				label: "Toʻy Oshi",
 				date: "26 Iyun 2026",
 				time: "12:00 da",
 				venue: "Shohjaxon toʻyxonasi",
@@ -257,6 +257,9 @@ export const EVENTS = {
 		key: "party",
 		// Girls' party — Urgench.
 		date: new Date("2026-06-25T19:00:00"),
+		year: 2026,
+		monthIndex: 5, // September (0-based)
+		day: 25,
 		mapEmbed:
 			"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d451.4439161046809!2d60.6083369313182!3d41.574272596484086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1781783978990!5m2!1sen!2s",
 		mapLink:
@@ -264,7 +267,7 @@ export const EVENTS = {
 	},
 	wedding: {
 		key: "wedding",
-		// Wedding day — Tashkent. Drives the calendar highlight and countdown.
+		// Wedding day — Urgench. Drives the calendar highlight and countdown.
 		date: new Date("2026-06-26T12:00:00"),
 		year: 2026,
 		monthIndex: 5, // September (0-based)

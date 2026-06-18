@@ -7,7 +7,7 @@ export default function Quote() {
 	const { t } = useLanguage();
 
 	return (
-		<section className="relative overflow-hidden bg-ivory px-6 py-20">
+		<section className="relative overflow-hidden bg-ivory px-6 pt-8 pb-20">
 			<Reveal delay={0.3}>
 				<Flourish className="mx-auto mt-12 w-64 text-gold" />
 			</Reveal>

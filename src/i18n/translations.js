@@ -25,7 +25,7 @@ export const translations = {
 			groom: "Oybek",
 			bride: "Charos",
 			connector: "va",
-			intro: "Quvonchli xabarni yetkazishga oshiqamiz – biz turmush quramiz!",
+			intro: "Quvonchli xabarni yetkazishga oshiqamiz – biz turmush quryabmiz!",
 		},
 		events: {
 			party: {
@@ -70,7 +70,7 @@ export const translations = {
 			],
 		},
 		venues: {
-			eyebrow: "Bizni qidiring",
+			eyebrow: "",
 			title: "Tadbir manzillari",
 			timePrefix: "Boshlanishi",
 			mapButton: "Xaritada koʻrish",
